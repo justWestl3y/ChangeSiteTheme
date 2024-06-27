@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Mulish', sans-serif;
+	user-select: none;
+}
+
+body {
+    background-color: #ebe8e8;
+    transition: .3s;
+}
+
+.container div {
+    height: 5vh;
+    width: 5vh;
+    margin-top: 3vh;
+    margin-left: 3vh;
+    cursor: pointer;
+    border-radius: 25%;
+    padding: 5px;
+    border: 3px solid #c7ba03;
+    transition: all 0.3s ease;
+}
+
+.container div:hover{
+    border: 3px solid #8d8585;
+    transition: all 0.3s ease;
+}
+
+.container.active div{
+    background: linear-gradient(90deg, #075858, #4ddfdf);
+    transition: all 0.3s ease;
+    background-image: url(images/crescent_moon_41nm7cg4bcod.svg); 
+    background-size:6vh;
+    border: 3px solid #269dd4;
+}
+
+.container.active div:hover{
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, #39737a, #1eb1c4);
+    background-image: url(images/crescent_moon_41nm7cg4bcod.svg);
+    background-size:6vh;
+    border: 3px solid #e9eaeb;
+}
+
+body.active {
+    color: #d8d5db;
+    background-color: #1d1d1d;
+}
+
+.container img {
+    scale: 1.2;
+    height: 5vh;
+    width: auto;
+}
+
+.container.active img {
+    scale: 0;
+}
+
+.ok {
+    margin-top: 30vh;
+    margin-right: 20%;
+    margin-left: 20%;
+}
